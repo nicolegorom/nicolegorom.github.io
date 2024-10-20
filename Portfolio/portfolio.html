@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JULES' PORTFOLIO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" />
+	    <link rel="stylesheet" href="parallax.css" />
+
+        <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+       
+        <!--UNBOUNDED FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+        
+        <!--DM SANS FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section>
+            <div class="keyart" id="parallax">
+                <div class="keyart_layer parallax" id="keyart-0" data-speed="1"></div>
+                <div class="keyart_layer parallax" id="keyart-1" data-speed="20"></div>
+                <div class="keyart_layer parallax" id="keyart-2" data-speed="30"></div>
+                <div class="keyart_layer parallax" id="keyart-3" data-speed="40"></div>
+                <div class="keyart_layer parallax" id="keyart-4" data-speed="50"></div>
+                <div class="keyart_layer parallax" id="keyart-5" data-speed="60"></div>
+                <div class="keyart_layer parallax" id="keyart-6" data-speed="70"></div>
+            </div>
+        </section>
+    
+        <section class="main-content" style="min-height:200px;">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html"><</a>
+                <div class="dropdown">
+                  <button class="dropbtn">portfolio sections
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#basicInformation">basic information</a>
+                    <a href="#objectives">objectives</a>
+                    <a href="#skills">skills</a>
+                    <a href="#education">education</a>
+                    <a href="#affiliations">affiliations</a>
+                    <a href="#achievements">achievements</a>
+                    <a href="#works">works</a>
+                  </div>
+                </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+            
+            <div class="portfolioButtons">
+                <div class="buttonRow">
+                    <!--COLUMN 1-->
+                    <div class="buttonColumn">
+                        <div class="buttonContainer">
+                            <a href="#basicInformation">
+                                <button class="button">basic information ></button>
+                            </a>
+                        </div>
+                        <div class="buttonContainer">
+                            <a href="#education">
+                                <button class="button">education ></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--COLUMN 2-->
+                    <div class="buttonColumn">
+                        <div class="buttonContainer">
+                            <a href="#objectives">
+                                <button class="button">objectives ></button>
+                            </a>
+                        </div>
+                        <div class="buttonContainer">
+                            <a href="#affiliations">
+                                <button class="button">affiliations ></button>
+                            </a>
+                        </div>
+                        <div class="buttonContainer">
+                            <a href="#works">
+                                <button class="button">works ></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--COLUMN 3-->
+                    <div class="buttonColumn">
+                        <div class="buttonContainer">
+                            <a href="#skills">
+                                <button class="button">skills ></button>
+                            </a>
+                        </div>
+                        <div class="buttonContainer">
+                            <a href="#achievements">
+                                <button class="button">achievements ></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--BASIC INFORMATION-->
+            <div id="basicInformation">
+                <h1>BASIC INFORMATION</h1>
+                <img src="assets/basicInformationPic.png">
+            </div>
+
+            <!--OBJECTIVES AND SKILLS-->
+            <div class="osRow">
+                <div id="objectives" class="osColumn" style="background-color: #FDB515; display: block;">
+                    <h1>OBJECTIVES</h1>
+                    <p>A Bachelor of Science in Information Technology Student that specializes in Front End Development, and Project Management that seeks an opportunity to contribute to impactful projects, learn, grow, acquire valuable skills, and gain meaningful experiences in the tech industry.</p>
+                </div>
+
+                <div id="skills" class="osColumn" style="background-color: white; display: block;">
+                    <h1>SKILLS</h1>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Canva, Figma, Photoshop, & Procreate</li>
+                    <li>Leadership Skills</li>
+                    <li>Fair Communication Skills & Public Speaking</li>
+                    <li>Able to work in a dynamic setting and in collaborative groups</li>
+                    <li>Able to adapt easily in new work environments</li>
+                </div>
+            </div>
+
+            <!--EDUCATION-->
+            <div id="education">
+                <div class="educationHeader">
+                    <h1>EDUCATION</h1>
+                </div>
+                <div class="educationContent">
+                    <div class="educationRow">
+                        <div class="educationColumn">
+                            <img src="assets/education1.png">
+                            <h2>SAN PABLO CITY</h2>
+                            <h2>CENTRAL ELEMENTARY SCHOOL</h2>
+                            <p>Elementary</p>
+                            <p>2009 - 2015</p>
+                        </div>
+                        <div class="educationColumn">
+                            <img src="assets/education2.png">
+                            <h2>SAN PABLO CITY</h2>
+                            <h2>SCIENCE HIGH SCHOOL</h2>
+                            <p>Junior High School</p>
+                            <p>2015 - 2019</p>
+                        </div>
+                    </div>
+                    <div class="educationRow">
+                        <div class="educationColumn">
+                            <img src="assets/education3.png">
+                            <h2>SAN PABLO CITY</h2>
+                            <h2>SCIENCE INTEGRATED HIGH SCHOOL</h2>
+                            <p>Senior High School</p>
+                            <p>2019 - 2021</p>
+                        </div>
+                        <div class="educationColumn">
+                            <img src="assets/education4.png">
+                            <h2>POLYTECHNIC UNIVERSITY OF THE</h2>
+                            <h2>PHILIPPINES - STO. TOMAS CAMPUS</h2>
+                            <p>College</p>
+                            <p>2021 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="affiliations">
+                <div class="affiliationsHeader">
+                    <h1>AFFILIATIONS</h1>
+                </div>
+                
+                <div class="affiliationsContainer">
+                    <div class="affiliationsRow">
+                        <div class="affiliationsColumn">
+                            <h3>SAN PABLO CITY SCIENCE INTEGRATED HIGH SCHOOL</h3>
+                            <li>Grade 11 Class Secretary (2019 - 2020)</li>
+
+                            <h3>INTERNATIONAL ORDER OF THE RAINBOW FOR GIRLS - PITONG LAWA ASSEMBLY NO. 21</h3>
+                            <li>Active Member (2017 - Present)</li>
+                            <li>Head of Publication Committee (2020 - 2024)</li>
+                            <li>Head of Charity Committee (2023 - 2024)</li>
+                            <li>Head of Fundraising Committee (2022 - 2023)</li>
+                            <li>Treasurer (2021 - 2022)</li>
+                            <li>Recorder (Secretary; 2020 - 2021, 2022)</li>
+                            <li>Sister of Faith (2022 - 2023)</li>
+                            <li>Sister of Charity (2023 - 2024)</li>
+                            <li>Worthy Advisor (President; Present)</li>
+
+                            <h3>INTERNATIONAL ORDER OF THE RAINBOW FOR GIRLS -</h3>
+                            <li>Grand Representative to Pennsylvania (2023 - Present)</li>
+                        </div>
+
+                        <div class="affiliationsColumn">
+                            <h3>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - STO. TOMAS CAMPUS</h3>
+                            <h4>Central Student Council</h4>
+                            <li>Junior Council Officer - Public Relations (2021 - 2022)</li>
+        
+                            <h4>BS in Information Technology Class</h4>
+                            <li>Vice President (2022 - 2023)</li>
+                            <li>President (2023 - 2024)</li>
+                            <li>Vice President (2024 - Present)</li>
+        
+                            <h4>Computer Society</h4>
+                            <li>Treasurer (2022 - 2023)</li>
+                            <li>Head of Documentation Committee (2022 - 2023)</li>
+                            <li>Head of Finance Committee (2022 - 2023)</li>
+                            <li>3rd year P.R.O (2023 - 2024)</li>
+        
+                            <h4>Google Developers Students Club</h4>
+                            <li>Media and Video Presentations Lead (2023 - 2024)</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="achievements">
+                <div class="achievementsHeader">
+                    <h1>ACHIEVEMENTS</h1>
+                </div>
+                <div class="achievementsContainer">
+                    <h3>JUNIOR HIGH SCHOOL - SAN PABLO CITY SCIENCE HIGH SCHOOL</h3>
+                    <li>Consistent Honor Student (2015 - 2019)</li>
+
+                    <h3>SENIOR HIGH SCHOOL - SAN PABLO CITY SCIENCE INTEGRATED HIGH SCHOOL</h3>
+                    <li>Grade 11 - With Honors</li>
+                    <li>Grade 12 - With High Honors</li>
+                    <li>Graduated Senior High School with Honors</li>
+
+                    <h3>COLLEGE - POLYTECHNIC UNIVERSITY OF THE PHILIPPINES - STO. TOMAS CAMPUS</h3>
+                    <li>President's Lister (2021 - Present)</li>
+                    <li>BSIT 2-1 Rank 4</li>
+                    <li>PUPSTC RISFI Student Researcher</li>
+                    <li>PUP Hackathon: UTHack ang Puhunan Participant</li>
+                    <li>GDSC - PUPSTC ISKONNOVATION - 3rd Place</li>
+
+                    <h3>ISKOLAR NG LAGUNA (2021 - PRESENT)</h3>
+                </div>
+            </div>
+
+            <div id="works">
+                <div class="worksHeader1">
+                    <h1>WORKS</h1>
+                </div>
+                <div class="worksContainer">
+                    <div class="worksHeader">
+                        <h1>UNIVERSITY AND ORG WORKS</h1>
+                    </div>
+                    <div class="slideshowContainer">
+                        <div class="mySlides">
+                            <img src="assets/universityWorks1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/universityWorks2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/universityWorks3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/orgWorks1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/orgWorks2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="assets/orgWorks3.png" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)"><</a>
+                        <a class="next" onclick="plusSlides(1)">></a>
+                    </div>
+                    <br>
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+                    </div>
+                </div>
+
+                <!--COMMISSIONS-->
+                <div class="commissionsContainer">
+                    <div class="commissionsHeader">
+                        <h1>PRACTICE WORKS AND COMMISSIONS</h1>
+                    </div>
+                    <img src="assets/commission1.png">
+                    <img src="assets/commission2.png">
+                </div>
+
+                <!--VIDEOS-->
+                <div class="videoContainer">
+                    <div class="buttonRow">
+                        <!--COLUMN 1-->
+                        <div class="buttonColumn">
+                        </div>
+    
+                        <!--COLUMN 2-->
+                        <div class="buttonColumn">
+                            <a href="https://www.canva.com/design/DAGK7T2GQo4/AZl2rK2dLTKHI3i4IH4Stw/edit?utm_content=DAGK7T2GQo4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                                <button class="button1">VIDEO PROJECTS ></button>
+                            </a>
+                        </div>
+    
+                        <!--COLUMN 3-->
+                        <div class="buttonColumn">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brandings">
+                    <div class="brandingHeader">
+                        <!--ZEROTONIN-->
+                        <div class="zerotonin">
+                            <h1>BRANDINGS</h1>
+                            <img src="assets/zerotoninLogo.png">
+                            <div class="zerotoninContent">
+                                <img src="assets/zerotonin1.png">
+                                <img src="assets/zerotonin2.png">
+                            </div>
+                        </div>
+
+                        <!--IROG-->
+                        <div class="irog">
+                            <img src="assets/irogLogo.png">
+                            <div class="irogContent">
+                                <img src="assets/irog1.png">
+                                <img src="assets/irog2.png">
+                                <img src="assets/irog3.png">
+                            </div>
+                        </div>
+
+                        <!--MANONG KREMA-->
+                        <div class="manongKrema">
+                            <h1>MANONG KREMA</h1>
+                            <img src="assets/manongKrema.png">
+                        </div>
+
+                        <!--TICA-->
+                        <div class="tica">
+                            <h1>TICA</h1>
+                            <img src="assets/tica.png">
+                        </div>
+                    </div>
+                </div>
+            </div> <!--WORKS END-->
+
+            <!--FOOTER-->
+            <div class="footer">
+                <img src="assets/footer.png">
+            </div>
+            </div>
+        </section>
+
+        <!--Uses JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/parallax.js"></script>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        //SLIDESHOW
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+        </script>
+    </body>
+</html>
