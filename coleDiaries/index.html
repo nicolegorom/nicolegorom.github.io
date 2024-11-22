@@ -9,6 +9,21 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
         .bannerText {
             background-color: #2E4A66;
             color: white;
@@ -37,27 +52,36 @@
             margin-top: 80px;
         }
 
-        .photographsContainer {
-            background-color: #2E4A66;
+        .photographsContainer p {
+            color: #2E4A66;
+            text-align: justify;
         }
 
         .photographsContainer h1 {
             font-size: 100px;
-            color: white;
+            color: #2E4A66;
+        }
+
+        .videosContainer {
+            background-color: #2E4A66;
         }
 
         .videosContainer h1 {
             font-size: 100px;
-            color: #2E4A66;
+            color: white;
         }
 
         .videosContainer h2 {
             font-size: 60px;
-            color: #2E4A66;
+            color: white;
         }
 
         .education {
             padding-top: 20px;
+        }
+
+        .youTube {
+            margin: 20px;
         }
     </style>
 </head>
@@ -79,47 +103,10 @@
             and curiosity. Join the journey, and let’s discover new places, perspectives, and inspirations together.</p>
     </div>
 
-    <!--NAVIGATION-->
-    <div class="bannerNavigation">
-        <div class="row">
-            <div class="col-md-7 p-5">
-                <h1>entries</h1>
-            </div>
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-md-4 p-5">
-                        <div class="mediaType">
-                            <div class="row">
-                                <a href="#photographs">PHOTOGRAPHS</a>
-                            </div>
-                            <div class="row">
-                                <a href="#videos">VIDEOS</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-8 p-5">
-                        <div class="videoCategories">
-                            <div class="row">
-                                <a href="#lifestyle">Lifestyle</a>
-                            </div>
-                            <div class="row">
-                                <a href="#education">Education</a>
-                            </div>
-                            <div class="row">
-                                <a href="">Others</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--PHOTOGRAPHS-->
     <div class="photographsContainer" id="photographs">
         <div class="photographsText">
-            <h1 class="p-5">photographs</h1>
+            <h1 class="p-5 fs-1 text-sm-start text-md-start text-wrap">photographs</h1>
         </div>
         <div class="upperRow">
             <div class="row">
@@ -169,15 +156,16 @@
 
                 <div class="col-md-8 p-5">
                     <!--TEXT-->
-                    <h2 style="color: white; font-size: 60px;">her life in film</h2>
-                    <p style="color: white; text-align: justify;">Jules has a passion for capturing the beauty in everyday moments through her lens. Photography is
+                    <h2 class="fs-1 text-sm-start text-md-start text-wrap" style="color: #2E4A66; font-size: 60px;">her
+                        life in film</h2>
+                    <p>Jules has a passion for capturing the beauty in everyday moments through her lens. Photography is
                         more than
                         just a hobby; it's her way of romanticizing life, finding magic in the mundane, and telling
                         stories one frame
                         at a time.</p>
 
                     <!--SPOTIFY EMBED-->
-                    <p style="color: white; text-align: justify;">Here's a carefully curated playlist maade by Jules, personalized to match the vibes of each
+                    <p>Here's a carefully curated playlist maade by Jules, personalized to match the vibes of each
                         picture and
                         emotions conveyed by the photographer.</p>
                     <iframe style="border-radius:12px"
@@ -237,123 +225,155 @@
     <!--VIDEOS-->
     <div class="videosContainer" id="videos">
         <div class="photographsText">
-            <h1 class="p-5">videos</h1>
+            <h1 class="p-5 fs-1 text-sm-start text-md-start text-wrap">videos</h1>
         </div>
         <div class="vlogContainer p-5">
             <div class="lifestyle" id="lifestyle">
                 <div class="row">
-                    <h2>lifestyle</h2>
+                    <h2 class="fs-1 text-sm-start text-md-start text-wrap">lifestyle</h2>
                     <div class="col-md-6">
                         <!--THE LONG AWAITED VLOG-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/O3_XqPyce4s?si=yEjQwe1RVcnFTDvY&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/O3_XqPyce4s?si=yEjQwe1RVcnFTDvY&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--SEPTEMBER BABIES-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/2Bz5d4J6vYc?si=lFIt46--LUMmMOrK&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/2Bz5d4J6vYc?si=lFIt46--LUMmMOrK&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--A DAY IN THE LIFE OF AN IT STUDENT-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/0wgF2majuE4?si=ULGzI6EfdjK0pOY9&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/0wgF2majuE4?si=ULGzI6EfdjK0pOY9&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--A SPONTY TRIP WITH THE GIRLES (CEBU PART 1)-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/JqzkuxF5ARE?si=Z2wdQYcg7a7lXg1r&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/JqzkuxF5ARE?si=Z2wdQYcg7a7lXg1r&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--LIFE LATELY-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/zvgAKBgHMZM?si=3_Gv0WKPTNCDPXaE&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/zvgAKBgHMZM?si=3_Gv0WKPTNCDPXaE&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
 
 
                     <div class="col-md-6">
                         <!--FIELDTRIP 2019-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/9IYVpRHE_5I?si=6qoSBL-x7SRcAj8Y&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/9IYVpRHE_5I?si=6qoSBL-x7SRcAj8Y&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--MESSY EDITING-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/os_Z23OejmE?si=-E3Lu4x-Qfpvz90n&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/os_Z23OejmE?si=-E3Lu4x-Qfpvz90n&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--VLOGMAS 2021-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/RlwHoXF49xM?si=M2zVvMmzrq5KE_35&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/RlwHoXF49xM?si=M2zVvMmzrq5KE_35&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--CEBU 2022-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/Dciq2FPWeVc?si=1rTr06Rn0NDa7pv8&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/Dciq2FPWeVc?si=1rTr06Rn0NDa7pv8&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
 
                         <!--PICNIC-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/VAQvsHsMH80?si=m-5jDP8zpihDhzPw&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/VAQvsHsMH80?si=m-5jDP8zpihDhzPw&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="education" id="education">
-                <h2>education</h2>
+                <h2 class="fs-1 text-sm-start text-md-start text-wrap">education</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <!--BENTE SIETE-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/vkKs_FolL9s?si=cPxXxTZCSt4cibwZ&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/vkKs_FolL9s?si=cPxXxTZCSt4cibwZ&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
 
                         <!--THE LOTTERY-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/0EVlSkkHtIQ?si=JSdIiMf2W8hLkquB&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/0EVlSkkHtIQ?si=JSdIiMf2W8hLkquB&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
 
                     </div>
 
                     <div class="col-md-6">
                         <!--THE LOTTERY TRAILER-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/IZI-4SttJZs?si=fSx2YrtoEDOYcQtw&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/IZI-4SttJZs?si=fSx2YrtoEDOYcQtw&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
 
                         <!--IT STUDENT DIARIES-->
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/v9o4qEQEkJk?si=vXJHAY5xeLbIPL2_&rel=0&controls=0"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youTube d-flex justify-content-center">
+                            <iframe width="450" height="253"
+                                src="https://www.youtube.com/embed/v9o4qEQEkJk?si=vXJHAY5xeLbIPL2_&rel=0&controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+
                     </div>
                 </div>
             </div>
